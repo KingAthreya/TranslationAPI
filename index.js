@@ -13,7 +13,6 @@ const app = express()
 
 // creating middleware routes
 app.use(bodyParser.json())
-app.use("/api/user", route)
 app.use("/api", translateRoute)
 
 
