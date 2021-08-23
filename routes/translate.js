@@ -18,7 +18,7 @@ translateRoute.post("/translate", (req,res)=>{
           textType: req.query.textType || 'plain',
         },
         headers: {
-          'content-type': req.query.content-type || 'application/json',
+          'content-type': 'application/json',
           'x-rapidapi-host': 'microsoft-translator-text.p.rapidapi.com',
           'x-rapidapi-key': process.env.API_KEY
         },
